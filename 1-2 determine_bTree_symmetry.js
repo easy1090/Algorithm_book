@@ -5,21 +5,22 @@
     this.left = null;
     this.right = null;
 } */
-function isSymmetrical2(root1,root2){
-    if(root1==null&&root2==null){
+
+function isSymmetrical2(root1, root2){
+    if(root1 == null && root2 == null){
         return true;
     }
-    if(root1==null||root2==null){
+    if(root1 == null || root2 == null){
         return false;
     }
-    if(root1.val!=root2.val){
+    if(root1.val != root2.val){
         return false;
     }
-    return isSymmetrical2(root1.left,root1.right)&&isSymmetrical2(root2.left,root2.right);
+    return isSymmetrical2(root1.left, root2.right) && isSymmetrical2(root1.right, root2.left);
 }
-
+ 
 function isSymmetrical(pRoot)
 {
     // write code here
- 	isSymmetrical2(pRoot,pRoot);
+    return isSymmetrical2(pRoot, pRoot)
 }
