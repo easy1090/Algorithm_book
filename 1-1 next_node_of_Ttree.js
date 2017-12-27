@@ -26,4 +26,4 @@ function GetNext(pNode)
         pNode=pNode.next;
     }
 }
-console.log("hahahha")
+console.log('rrr')
