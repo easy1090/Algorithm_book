@@ -26,3 +26,4 @@ function GetNext(pNode)
         pNode=pNode.next;
     }
 }
+console.log('rrr')
